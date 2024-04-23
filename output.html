@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Final Prediction - {{ title }}</title>
+  <style>
+    /* Base Styles */
+    body {
+      background-color: #F8F9FC; /* Very light gray */
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    /* Navigation Bar */
+    .navigation {
+      background-color: #3498DB; /* Light blue */
+      color: #fff; /* White */
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+
+    .navigation a {
+      color: inherit;
+      text-decoration: none;
+      padding: 5px 10px;
+    }
+
+    .navigation a:hover {
+      background-color: #2980B9; /* Darker blue on hover */
+    }
+
+    /* Main Content */
+    .content {
+      background-color: #fff; /* White */
+      border: 1px solid #ddd; /* Light gray border */
+      padding: 20px;
+      margin-top: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    }
+
+    .prediction-section {
+      margin-bottom: 20px;
+      border-left: 5px solid #ddd; /* Light gray border on left */
+      padding: 20px;
+    }
+
+    .prediction-section:first-child { /* Style for first section */
+      border-left-color: #3498DB; /* Light blue border for first section */
+      background-color: #F0F8FF; /* Light blue background */
+    }
+
+    .prediction-section:last-child { /* Style for last section */
+      border-left-color: #9B59B6; /* Light purple border for last section */
+      background-color: #FBEAEC; /* Light pink background */
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      text-align: center;
+      color: #333; /* Dark gray */
+      border-bottom: 1px solid #ddd; /* Light gray border */
+      padding-bottom: 5px;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      margin: 10px 0;
+      color: #777; /* Lighter gray */
+    }
+
+    .prediction-details {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .prediction-details span:first-child {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navigation">
+    <h1>{{ title }}</h1>
+    <a href="/">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="content">
+
+    <section class="prediction-section">
+      <h1>LSTM Predictions</h1>
+      <h2>Details</h2>
+      <div class="prediction-details">
+        <span>Model Name:</span>
+        <span>{{ lstm_model_name }}</span>
+      </div>
+      <h2>Prediction</h2>
+      <h3 style="color:red">{{ x }}</h3>
+    </section>
+
+    <section class="prediction-section">
+      <h1>Gemini Predictions</h1>
+      <h2>Details</h2>
+      <div class="prediction-details">
+        <span>Model Type:</span>
+        <span>{{ gemini_model_type }}</span>
+      </div>
+      <h2>Prediction</h2>
+      <h3 style="color:red">{{ y }}</h3>
+    </section>
+  </div>
+</body>
+</html

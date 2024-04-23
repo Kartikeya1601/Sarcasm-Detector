@@ -1,0 +1,71 @@
+/* Base styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F8F9FC; /* Light gray */
+  color: #333; /* Dark gray */
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  background-color: #3498DB; /* Light blue */
+  color: #fff; /* White */
+  padding: 10px 0;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation a {
+  color: inherit;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.navigation a:hover {
+  background-color: #2980B9; /* Darker blue on hover */
+}
+
+/* Main */
+.main {
+  padding-top: 50px;
+}
+
+.about-us,
+.team {
+  background-color: #F0F8FF; /* Light blue background sections */
+  border: 1px solid #ddd; /* Light gray border */
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.key-features {
+  margin-top: 20px;
+}
+
+.key-features h3 {
+  margin-bottom: 10px;
+}
+
+.key-features ul {
+  list-style: none;
+  padding:
